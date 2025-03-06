@@ -1,0 +1,66 @@
+.booking__form {
+  width: 47.5%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking__form input,
+.booking__form select,
+.textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid rgba(124, 138, 151, 0.16);
+  color: #7c8a97;
+  border-radius: 5px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Enhancing focus styles for better user experience */
+.booking__form input:focus,
+.booking__form select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #000d6b;
+  box-shadow: 0 0 5px rgba(0, 13, 107, 0.3);
+}
+
+/* Placeholder styles */
+.booking__form input::placeholder,
+.textarea::placeholder {
+  color: rgba(124, 138, 151, 0.7);
+}
+
+/* Journey Time Label Styling */
+.time__picker::before {
+  content: "Journey Time";
+  color: #7c8a97;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .booking__form {
+    width: 100%;
+  }
+
+  .booking__form input,
+  .booking__form select,
+  .textarea {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .booking__form {
+    padding: 0 10px;
+  }
+
+  .booking__form input,
+  .booking__form select,
+  .textarea {
+    font-size: 0.85rem;
+  }
+}

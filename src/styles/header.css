@@ -1,0 +1,137 @@
+/* ================= Global Styles ================= */
+:root {
+  --primary-color: #2F3C7E;
+  --secondary-color: #A7BEAE;
+  --accent-color: #06d71b;
+  --text-color: #fff;
+  --bg-dark: #28282B;
+  --bg-light: #f6f6fc;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  color: var(--bg-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= Header Styles ================= */
+.header__top {
+  padding: 10px 0;
+  background: var(--bg-dark);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__top__right a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.header__top__right a:hover {
+  color: #a00b0b;
+}
+
+/* ================= Navigation Styles ================= */
+.main__navbar {
+  padding: 15px 0;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav__item:hover {
+  color: var(--accent-color);
+}
+
+/* ================= Search Box ================= */
+.search__box {
+  display: flex;
+  align-items: center;
+  background: var(--bg-dark);
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+}
+
+.search__box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+}
+
+.search__box input::placeholder {
+  color: #aaa;
+}
+
+/* ================= Button Styles ================= */
+.header__btn {
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.header__btn {
+  background: #000000d1 !important;
+  color: #f6f6fc !important;
+  border: none;
+  outline: none;
+}
+
+.header__btn a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fbfbff;
+}
+
+.header__btn:hover {
+  background: #dedfe4c1;
+  color: #fff;
+}
+
+/* .header__btn:hover {
+  background: #a00b0b;
+  color: #fff;
+} */
+
+/* ================= Mobile Styles ================= */
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

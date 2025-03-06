@@ -1,0 +1,80 @@
+.become__driver {
+  background: linear-gradient(rgba(191, 195, 228, 0.7), rgba(99, 112, 212, 0.78)),
+    url("../assets/all-images/drive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 20px;
+  /* Added horizontal padding for better layout */
+  text-align: center;
+  /* Ensures better alignment on all devices */
+}
+
+.become__driver-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  /* Fluid typography */
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.become__driver button {
+  background: #fff;
+  color: #000c6be2;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.become__driver button:hover {
+  background: #000c6be2;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 992px) {
+  .become__driver-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .become__driver {
+    padding: 50px 15px;
+  }
+
+  .become__driver-title {
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    line-height: 1.4;
+  }
+
+  .become__driver button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .become__driver-img {
+    display: none;
+  }
+
+  .become__driver {
+    text-align: center;
+    padding: 40px 10px;
+  }
+
+  .become__driver-title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .become__driver button {
+    font-size: 0.85rem;
+    padding: 8px 18px;
+  }
+}

@@ -1,0 +1,53 @@
+.about__section-item {
+
+  column-gap: 2.5rem;
+  border-radius: 2px;
+  /* Adjusted for better responsiveness */
+}
+
+.about__section-item p i {
+  color: #b14212d0;
+  font-size: 1.2rem;
+  /* Slightly increased for better visibility */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 992px) {
+  .about__section-content h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    /* Dynamic font scaling */
+  }
+
+  .about__section-item {
+    column-gap: 2rem;
+    /* Adjusted gap for better spacing */
+  }
+
+  .about__section-item p {
+    font-size: 0.75rem;
+    /* Increased readability */
+    margin-bottom: 5px;
+    /* Prevents overlapping */
+  }
+
+  .section__description i {
+    font-size: 0.9rem !important;
+    /* Slightly larger for visibility */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__img {
+    margin-top: 40px;
+    /* Slightly increased for better spacing */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__section {
+    margin-top: 250px;
+    /* Adjusted for better spacing */
+    padding: 0 1rem;
+    /* Added padding for better structure */
+  }
+}

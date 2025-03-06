@@ -1,0 +1,52 @@
+/* Social Media Link Icons */
+.social__link-icon {
+  text-decoration: none;
+  color: #000d6b;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Social Icons */
+.social__link-icon:hover {
+  color: #f9a826;
+  transform: scale(1.1);
+}
+
+/* Contact Button Styling */
+.contact__btn {
+  padding: 10px 18px;
+  background: #000d6b;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.contact__btn:hover {
+  background: #f9a826;
+  transform: scale(1.05);
+  color: #000d6b;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .contact__btn {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contact__btn {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+    width: 100%;
+  }
+}

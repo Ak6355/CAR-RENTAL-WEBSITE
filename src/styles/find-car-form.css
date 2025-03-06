@@ -1,0 +1,179 @@
+/* Find Cars Section */
+.find__cars-left {
+  background: linear-gradient(rgba(249, 168, 38, 0.064), rgba(249, 168, 38, 0.9)),
+    url("../assets/all-images/toyota-offer-2.png");
+  background-position: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 35px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.find__cars-left:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+.find__cars-left h2 {
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+.form {
+  background: #fff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Input Fields */
+.form__group {
+  width: 30%;
+  margin-bottom: 0;
+}
+
+.form__group input,
+.select__group select {
+  border: 1px solid rgba(124, 138, 151, 0.16);
+  padding: 10px 12px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.form__group input:focus,
+.select__group select:focus {
+  border-color: #000d6b;
+  box-shadow: 0 0 8px rgba(0, 13, 107, 0.3);
+}
+
+/* Placeholder Text Styling */
+.form__group input::placeholder {
+  color: rgba(124, 138, 151, 0.7);
+}
+
+/* Button Styling */
+.find__car-btn {
+  background: #000d6b !important;
+  color: #fff !important;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.find__car-btn:hover {
+  background: #f9a826 !important;
+  color: #000d6b !important;
+}
+
+/* Hero Section */
+.hero__slider-section {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 200px;
+}
+
+.hero__form {
+  position: absolute;
+  bottom: -150px;
+  z-index: 11;
+  width: 100%;
+}
+
+.form__row {
+  background: #fff;
+  box-shadow: 5px 5px 15px -5px rgba(124, 138, 151, 0.5);
+}
+
+/* Journey Time Label */
+.journey__time::before {
+  content: "Journey time";
+  margin-right: 0.8rem;
+  color: #7c8a97;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 992px) {
+  .find__cars-left {
+    padding: 50px 22px;
+  }
+
+  .find__cars-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    padding: 30px 15px;
+  }
+
+  .form__group input,
+  .select__group select {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero__form {
+    bottom: -100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .find__cars-left {
+    padding-top: 20px;
+    padding-bottom: 0;
+    background: #fff;
+    text-align: center;
+  }
+
+  .find__cars-left h2 {
+    color: #000d6b;
+  }
+
+  .form {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .form__group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form__group input {
+    font-size: 0.85rem !important;
+  }
+
+  .select__group {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .find__car-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .find__cars-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero__form {
+    bottom: -200px;
+  }
+}
